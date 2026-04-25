@@ -17,40 +17,14 @@
 - Scrapy Playwright
 - Playwright
 
-## Структура проекта
-
-\`\`\`
-my_hybrid/
-├── my_hybrid/
-│   ├── spiders/
-│   │   └── quotes_scroll.py   # Паук
-│   └── settings.py            # Настройки (Playwright + Twisted Reactor)
-├── scrapy.cfg
-└── README.md
-\`\`\`
-
-## Запуск
-
-\`\`\`bash
 # Установка зависимостей
+
 pip install scrapy scrapy-playwright
 playwright install
 
 # Запуск паука
+
 scrapy crawl quotes_scroll -o quotes.json
-\`\`\`
-
-## Результат
-
-100 цитат с текстом, автором и тегами. Пример:
-
-\`\`\`json
-{
-  "text": "The world as we have created it...",
-  "author": "Albert Einstein",
-  "tags": ["change", "deep-thoughts", "world"]
-}
-\`\`\`
 
 ## Ключевые навыки
 
