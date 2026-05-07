@@ -10,6 +10,7 @@
 - Собирает текст цитаты, автора и теги
 - Сохраняет результат в JSON/CSV через Item Feed
 
+<<<<<<< HEAD
 ## Структура проекта
 my_hybrid/
 ├── my_hybrid/          # исходный код
@@ -28,6 +29,8 @@ my_hybrid/
 {"text": "“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”", "author": "Jane Austen"},
 {"text": "“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”", "author": "Marilyn Monroe"}
 
+=======
+>>>>>>> 71d78e057f41789dcc9bf7c1a58617eacd5e88cf
 ## Стек
 
 - Python 3.x
@@ -35,6 +38,7 @@ my_hybrid/
 - Scrapy Playwright
 - Playwright
 
+<<<<<<< HEAD
 ```bash
 # 1. Клонируем проект
 git clone https://github.com/NikolayDom/hybrid_scraper
@@ -52,6 +56,16 @@ playwright install
 # 4. Запускаем паука
 scrapy crawl hybrid -o quotes.json
 ```
+=======
+# Установка зависимостей
+
+pip install scrapy scrapy-playwright
+playwright install
+
+# Запуск паука
+
+scrapy crawl quotes_scroll -o quotes.json
+>>>>>>> 71d78e057f41789dcc9bf7c1a58617eacd5e88cf
 
 ## Ключевые навыки
 
